@@ -9,4 +9,13 @@
 * Gebe in einem String beide Möglichkeiten in der Konsole aus.
 * */
 
+
+
+
 const taktfahrplan_done_year = 2070;
+
+const birthdate = prompt("In welchem Jahr bist du gebohren?");
+
+let ageMax = taktfahrplan_done_year - birthdate;
+let ageMin = ageMax - 1;
+console.log(`Du bist ${ageMin} oder ${ageMax} Jahre alt.`);
