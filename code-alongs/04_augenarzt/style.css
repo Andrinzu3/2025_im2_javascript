@@ -26,6 +26,14 @@ main {
     border-radius: 9999px;
     position: relative;
     clip-path: ellipse(50% 35% at 50% 50%);
+    transition: clip-path 2000ms ease-in;
+}
+#eye.bloody {
+    background: red;
+}
+#eye.closed {
+    clip-path: ellipse(50% 0% at 50% 50%);
+    transition-timing-function: ease-in;
 }
 #pupil {
     width: var(--size-pupil);
@@ -36,4 +44,11 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
+    transition: left 333ms ease;
+}
+#pupil.look_right {
+    left: 70%;
+}
+#pupil.look_left {
+    left: 30%;
 }
